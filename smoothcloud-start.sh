@@ -78,4 +78,4 @@ $BIN*)
   ;;
 esac
 
-java -jar Smoothcloud.jar
+screen -RS SmoothCloud java -Xms512MB -jar smoothcloud.jar

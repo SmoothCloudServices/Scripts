@@ -10,12 +10,10 @@ case $JAVA_VER in
           wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.deb
           sudo dpkg -i jdk-22_linux-x64_bin.deb
           java --version
-
           ls -ld /usr/lib/jvm/jdk*
-          sudo nano /etc/environment
 
-          export JAVA_HOME="/usr/lib/jvm/jdk-22-oracle-x64"
-          export PATH="$PATH:${JAVA_HOME}/bin"
+          echo 'export JAVA_HOME="/usr/lib/jvm/jdk-22-oracle-x64"' | sudo tee -a /etc/environment
+          echo 'export PATH="$PATH:${JAVA_HOME}/bin"' | sudo tee -a /etc/environment
 
           source  /etc/environment
           echo $JAVA_HOME
@@ -41,12 +39,10 @@ $BIN*)
       wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.deb
       sudo dpkg -i jdk-22_linux-x64_bin.deb
       java --version
-
       ls -ld /usr/lib/jvm/jdk*
-      sudo nano /etc/environment
 
-      export JAVA_HOME="/usr/lib/jvm/jdk-22-oracle-x64"
-      export PATH="$PATH:${JAVA_HOME}/bin"
+      echo 'export JAVA_HOME="/usr/lib/jvm/jdk-22-oracle-x64"' | sudo tee -a /etc/environment
+      echo 'export PATH="$PATH:${JAVA_HOME}/bin"' | sudo tee -a /etc/environment
 
       source  /etc/environment
       echo $JAVA_HOME

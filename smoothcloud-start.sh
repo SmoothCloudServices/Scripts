@@ -74,4 +74,4 @@ $BIN*)
   ;;
 esac
 
-screen -RS SmoothCloud java -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:CompileThreshold=100 -XX:+UnlockExperimentalVMOptions -XX:+UseCompressedOop -jar smoothcloud.jar
+screen -RS SmoothCloud java -Xms64M -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:CompileThreshold=100 -XX:+UnlockExperimentalVMOptions -XX:+UseCompressedOop -jar smoothcloud.jar

@@ -29,7 +29,7 @@ case $JAVA_VER in
       ;;
 esac
 
-JAVA_INSTALLED=$(command -v screen)
+JAVA_INSTALLED=$(command -v java)
 case $JAVA_INSTALLED in
 $BIN*)
   while true; do

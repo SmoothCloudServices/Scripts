@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
-title SmoothCloudServices
+title SmoothCloud
 
 set /p CheckIfStart="Do you want to start the Cloud? (y/n): "
 if /i "%CheckIfStart%"=="n" (

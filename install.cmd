@@ -54,7 +54,7 @@ if /i "%CheckIfStart%"=="n" (
     :CheckJar
     if not exist smoothcloud.jar (
         echo SmoothCloud not found. Attempting to download...
-        curl -z smoothcloud.zip -o smoothcloud.zip -L https://github.com/SmoothCloudServices/download-test/releases/download/1.0/smoothcloud.zip
+        curl -z smoothcloud.zip -o smoothcloud.zip -L https://github.com/SmoothCloudServices/download-test/releases/latest/download/smoothcloud.zip
         if %ERRORLEVEL% neq 0 (
             echo Download failed. Check your internet connection and try again.
             goto EndScript

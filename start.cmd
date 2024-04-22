@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
-title SmoothCloud Services
+title SmoothCloud
 
 if defined JAVA_HOME (
     "%JAVA_HOME%\bin\java.exe" -version 2>&1 | findstr /C:"22"

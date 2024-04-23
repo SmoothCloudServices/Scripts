@@ -58,6 +58,7 @@ echo "Unzipping SmoothCloud..."
 sleep 0.5
 
 unzip smoothcloud.zip
+chmod +x start.sh
 
 echo "SmoothCloud installation completed successfully."
 
@@ -66,7 +67,7 @@ echo "Do you want to start SmoothCloud? (y/n)"
 read wantStart
 
 if [ "$wantStart" = "y" ]; then
-    bash start.sh
+    ./start.sh
 else
     echo "Exiting."
 fi
